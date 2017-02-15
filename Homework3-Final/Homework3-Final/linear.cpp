@@ -70,7 +70,7 @@ int indexOfMin(const double a[], int n)
 //    10 20 20
 bool includes(const double a1[], int n1, const double a2[], int n2)
 {
-	if (n1 < n2) return false;
+	if (n1 < n2 || n1 <= 0) return false;
 	if (n2 <= 0) return true;
 
 	if (a1[0] == a2[0]) return includes(a1 + 1, n1 - 1, a2 + 1, n2 - 1);
