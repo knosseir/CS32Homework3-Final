@@ -1,7 +1,7 @@
 // Return false if the somePredicate function returns false for at
 // least one of the array elements; return true otherwise.
 bool allTrue(const double a[], int n)
-{	// TODO: not all control paths return a value
+{	
 	if (n <= 0) return true;
 
 	if (!somePredicate(a[n - 1])) return false;
@@ -48,7 +48,7 @@ int indexOfMin(const double a[], int n)
 
 	int index = indexOfMin(a + 1, n - 1) + 1;
 
-	if (a[0] <= a[index]) return 0;		// TODO: <= or <? Probably <, but should test this
+	if (a[0] <= a[index]) return 0;
 
 	return index;
 }
