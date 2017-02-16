@@ -7,7 +7,7 @@ bool allTrue(const double a[], int n)
 	if (!somePredicate(a[n - 1])) return false;
 
 	if (n == 0) return true;
-	else return allTrue(a, --n);
+	return allTrue(a, --n);
 }
 
 // Return the number of elements in the array for which the
